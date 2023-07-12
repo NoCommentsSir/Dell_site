@@ -19,10 +19,6 @@ $(document).ready(function(){
             },
         ]
     });
-    $("#action").hover(function () {
-        $(".drop-down-menu").stop(true, false).slideToggle(400);
-        $(".hide-name").stop(true, false).slideToggle(400);
-    });
     $('#person').bind("change keyup input click", function() { this.value = this.value.replace(/[^а-яёА-ЯЁ\s\-]/g, ''); });
     $('#number').bind("change keyup input click", function() { this.value = this.value.replace(/[^0-9\+]/g, ''); });
 });

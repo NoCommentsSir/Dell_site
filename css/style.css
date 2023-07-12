@@ -361,6 +361,7 @@ body,p,h1,h2,h3,ul,ol {
     -webkit-text-fill-color: transparent;
     left: -1%;
     top: 17%;
+    width: 80%;
 }
 .qualities-inscription{
     position: absolute;
@@ -724,7 +725,6 @@ label:first-child{
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(242, 242, 242, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 90%;
     padding-top: 185px;
 }
 .footer{
