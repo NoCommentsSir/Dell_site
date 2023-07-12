@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Dell</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
                 <div class="logo-block">
                     <img src="img/image 7.png" alt="Dell">
                 </div>
-                <ul class="first-menu-list">
+                <ul class="first-menu-list hide">
                     <li class="first-menu-elem"><a href="#" class="first-menu-link">Главная</a></li>
                     <li class="first-menu-elem"><a href="#" class="first-menu-link">Каталог</a></li>
                     <li class="first-menu-elem"><a href="#" class="first-menu-link">Новости</a></li>
@@ -26,10 +27,26 @@
                     <a href="#" class="searching"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
                 <ul class="second-menu-list">
-                    <li class="second-menu-elem"><a href="#" class="first-menu-link"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
-                    <li class="second-menu-elem"><a href="#" class="first-menu-link"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
-                    <li class="second-menu-elem"><a href="#" class="first-menu-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                    <li class="second-menu-elem"><a href="#" class="first-menu-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                    <li class="second-menu-elem" id="action">
+                        <p class="hide-name">Мария</p>
+                        <a href="#" class="first-menu-link"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                        <ul class="drop-down-menu">
+                            <li class="drop-elem">
+                                <div class="drop-icon">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                </div>
+                                <p class="drop-text" id="name">Мария</p>
+                            </li>
+                            <li class="drop-elem"><a href="#" class="drop-link">Личный кабинет</a></li>
+                            <li class="drop-elem"><a href="#" class="drop-link">История заказов</a></li>
+                            <li class="drop-elem"><a href="#" class="drop-link">Персональные предложения</a></li>
+                            <li class="drop-elem"><a href="#" class="drop-link">Выйти</a></li>
+                        </ul>
+                    </li>
+                    <li class="second-menu-elem hide"><a href="#" class="first-menu-link"><i class="fa fa-bar-chart" aria-hidden="true"></i></a></li>
+                    <li class="second-menu-elem hide"><a href="#" class="first-menu-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                    <li class="second-menu-elem bag"><a href="#" class="first-menu-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                    <li class="second-menu-elem special"><a href="#" class="first-menu-link"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -46,7 +63,7 @@
                 </div>
                 <img class="slide-img" src="img/Новое фото.png" alt="Notebooks">
             </div>
-            <div class="slide slide_2">
+            <div class="slide slide_2 hide">
                 <div class="opacity-block"></div>
                 <div class="slide-img-2">
                     <img src="img/image 23.png" alt="Notebooks">
@@ -101,7 +118,7 @@
             </ul>
         </div>
         <div class="best-qualities">
-            <p class="qualities-inscription">best qualities</p>
+            <p class="qualities-inscription">best quality</p>
             <img src="img/image 45.png" alt="Notebook" class="qualities-img">
             <div class="container">
                 <div class="quality-desc-block">
@@ -154,12 +171,16 @@
             <div class="container">
                 <div class="news-desc-block">
                     <p class="slide-title">Последние новости</p>
-                    <div class="slide-button">
+                    <div class="slide-button hide">
                         <a href="#" class="slide-button-text">Все новости</a>
                         <a href="#" class="slide-button-tap"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <p class="slide-text">Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке</p>
+                <div class="slide-button special" id="button-fix">
+                    <a href="#" class="slide-button-tap"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#" class="slide-button-text">Все новости</a>
+                </div>
                 <ul class="news-list">
                     <li class="news-elem">
                         <div class="news-img-block">
@@ -168,7 +189,7 @@
                         </div>
                         <div class="information-block">
                             <p class="news-title">GE использует технологии Dell </p>
-                            <p class="news-text">Вы можете посмотреть ещё больше интересных </p>
+                            <p class="news-text">Вы можете посмотреть ещё больше интересных новостей</p>
                             <a href="#" class="news-button"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <div class="date">
@@ -176,14 +197,14 @@
                             <p class="month">июля</p>
                         </div>
                     </li>
-                    <li class="news-elem">
+                    <li class="news-elem hide">
                         <div class="news-img-block">
                             <img src="img/Rectangle 55.png" alt="Picture" class="news-img">
                             <div class="figure"></div>
                         </div>
                         <div class="information-block">
                             <p class="news-title">GE использует технологии Dell </p>
-                            <p class="news-text">Вы можете посмотреть ещё больше интересных </p>
+                            <p class="news-text">Вы можете посмотреть ещё больше интересных новостей</p>
                             <a href="#" class="news-button"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <div class="date">
@@ -191,14 +212,14 @@
                             <p class="month">июля</p>
                         </div>
                     </li>
-                    <li class="news-elem">
+                    <li class="news-elem hide">
                         <div class="news-img-block">
                             <img src="img/Rectangle 49.png" alt="Picture" class="news-img">
                             <div class="figure"></div>
                         </div>
                         <div class="information-block">
                             <p class="news-title">GE использует технологии Dell </p>
-                            <p class="news-text">Вы можете посмотреть ещё больше интересных </p>
+                            <p class="news-text">Вы можете посмотреть ещё больше интересных новостей</p>
                             <a href="#" class="news-button"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <div class="date">
@@ -213,7 +234,7 @@
                         </div>
                         <div class="information-block">
                             <p class="news-title">GE использует технологии Dell </p>
-                            <p class="news-text">Вы можете посмотреть ещё больше интересных </p>
+                            <p class="news-text">Вы можете посмотреть ещё больше интересных новостей</p>
                             <a href="#" class="news-button"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <div class="date">
@@ -228,7 +249,7 @@
                         </div>
                         <div class="information-block">
                             <p class="news-title">GE использует технологии Dell </p>
-                            <p class="news-text">Вы можете посмотреть ещё больше интересных </p>
+                            <p class="news-text">Вы можете посмотреть ещё больше интересных новостей</p>
                             <a href="#" class="news-button"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <div class="date">
@@ -236,14 +257,14 @@
                             <p class="month">июля</p>
                         </div>
                     </li>
-                    <li class="news-elem">
+                    <li class="news-elem hide">
                         <div class="news-img-block">
                             <img src="img/Rectangle 52.png" alt="Picture" class="news-img">
                             <div class="figure"></div>
                         </div>
                         <div class="information-block">
                             <p class="news-title">GE использует технологии Dell </p>
-                            <p class="news-text">Вы можете посмотреть ещё больше интересных </p>
+                            <p class="news-text">Вы можете посмотреть ещё больше интересных новостей</p>
                             <a href="#" class="news-button"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <div class="date">
@@ -266,7 +287,7 @@
                             </div>
                             <div class="type-text-block">
                                 <p class="type-title">Адрес</p>
-                                <p class="type-text">Москва, ул. 3-я Хорошевская, дом <br>2, строение 1</p>
+                                <p class="type-text">Москва, ул. 3-я Хорошевская, дом <br class="hide">2, строение 1</p>
                             </div>
                         </li>
                         <li class="type">
@@ -315,7 +336,7 @@
                 <img class="phone" src="img/Frame 49.png" alt="Iphone">
             </div>
         </div>
-        <div class="second-inscription">
+        <div class="second-inscription hide">
             <p class="second-inscription-text">our contacts</p>
         </div>
     </div>
@@ -323,9 +344,9 @@
         <div class="container">
            <div class="footer-menu">
             <div class="logo-block">
-                <img src="img/image 7.png" alt="Dell">
+                <img src="img/Dell_Logo 1.png" alt="Dell">
             </div>
-            <div class="footer-links">
+            <div class="footer-links hide">
                 <p class="link-title">Каталог</p>
                 <ul class="links-menu">
                     <li class="link"><a href="#" class="link-things">Ноутбуки</a></li>
@@ -335,7 +356,7 @@
                     <li class="link"><a href="#" class="link-things">Запасные части к Dell EMC</a></li>
                 </ul>
             </div>
-            <div class="footer-links">
+            <div class="footer-links hide">
                 <p class="link-title">Личный кабинет</p>
                 <ul class="links-menu">
                     <li class="link"><a href="#" class="link-things">Профиль</a></li>
@@ -345,7 +366,7 @@
                     <li class="link"><a href="#" class="link-things">Сравнение товаров</a></li>
                 </ul>
             </div>
-            <div class="footer-links">
+            <div class="footer-links hide">
                 <p class="link-title">Помощь</p>
                 <ul class="links-menu">
                     <li class="link"><a href="#" class="link-things">Доставка и оплата</a></li>
@@ -353,6 +374,38 @@
                     <li class="link"><a href="#" class="link-things">FAQ</a></li>
                     <li class="link"><a href="#" class="link-things">Наш АСЦ</a></li>
                 </ul>
+            </div>
+            <div class="hide-footer special">
+                <div class="footer-links">
+                    <p class="link-title">Помощь</p>
+                    <ul class="links-menu">
+                        <li class="link"><a href="#" class="link-things">Доставка и оплата</a></li>
+                        <li class="link"><a href="#" class="link-things">Контакты</a></li>
+                        <li class="link"><a href="#" class="link-things">FAQ</a></li>
+                        <li class="link"><a href="#" class="link-things">Наш АСЦ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <p class="link-title">Личный кабинет</p>
+                    <ul class="links-menu">
+                        <li class="link"><a href="#" class="link-things">Профиль</a></li>
+                        <li class="link"><a href="#" class="link-things">История заказов</a></li>
+                        <li class="link"><a href="#" class="link-things">SMS-уведомления</a></li>
+                        <li class="link"><a href="#" class="link-things">Избранное</a></li>
+                        <li class="link"><a href="#" class="link-things">Сравнение товаров</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <p class="link-title">Каталог</p>
+                    <ul class="links-menu">
+                        <li class="link" id="o2"><a href="#" class="link-things">Ноутбуки</a></li>
+                        <li class="link" id="o1"><a href="#" class="link-things">Персональные компьютеры</a></li>
+                        <li class="link" id="o4"><a href="#" class="link-things">Серверы</a></li>
+                        <li class="link" id="o5"></li>
+                        <li class="link" id="o6"><a href="#" class="link-things">Dell EMC</a></li>
+                        <li class="link" id="o3"><a href="#" class="link-things">Запасные части<br> к Dell EMC</a></li>
+                    </ul>
+                </div>
             </div>
            </div>
            <hr>
